@@ -1,0 +1,61 @@
+html {
+  overflow-y: scroll;
+
+  font-size: $font-size;
+}
+
+body {
+  font-family: $font-main;
+  font-size: $font-size;
+}
+
+a {
+  color: $color-primary;
+  transition: color 0.2s;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+
+    color: $color-accent;
+  }
+}
+
+h1 {
+  margin: (-$gap / 2) 0 ($gap * 3);
+
+  font-family: $font-header;
+  font-size: 3rem;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 3px solid lighten($color-accent, 30%);
+    margin: 0.85em 0 0 15px;
+  }
+}
+h2 {
+  margin: ($gap * 4) 0 ($gap * 3) ($gap * 3);
+
+  font-family: $font-header;
+  font-size: 2.5rem;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 30px;
+    margin: 0.25em 0 0 0;
+    border-top: 3px solid lighten($color-accent, 30%);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 3px solid lighten($color-accent, 30%);
+    margin: 0.85em 0 0 15px;
+  }
+}
+
+h3 {
+  font-family: $font-main;
+}

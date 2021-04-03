@@ -1,0 +1,33 @@
+li {
+  list-style-type: none;
+}
+.footer {
+  padding-top: 45px;
+  color: $color-light;
+  background-color: #232323;
+  &-item {
+    ul {
+      padding-left: 0;
+      a {
+        color: #777777;
+        &:hover {
+          color: $color-light;
+        }
+      }
+    }
+  }
+  &-bottom {
+    text-align: center;
+    p {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding-left: 15px;
+      padding-right: 15px;
+
+      a {
+        color: $color-light;
+        font-weight: 700;
+      }
+    }
+  }
+}
