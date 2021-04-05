@@ -41,16 +41,15 @@
     &__thumbnail {
       margin-bottom: 0;
       transition: background-color 0.2s, border-color 0.2s;
-      &:hover,
-      &:focus {
-        background-color: $color-accent;
-        border-color: $color-accent;
-
-        .new-films-item__title,
-        .top-films-item__title {
-          color: $color-light;
-        }
-      }
+    }
+    &__thumbnail:hover,
+    &__thumbnail:focus {
+      background-color: $color-accent;
+      border-color: $color-accent;
+    }
+    &:hover .new-films-item__title,
+    &:hover .top-films-item__title {
+      color: $color-light;
     }
   }
 }
@@ -66,25 +65,25 @@
       margin-bottom: 0;
       transition: background-color 0.2s, border-color 0.2s;
     }
-    &:hover {
-      h3 a {
-        color: $color-accent;
-      }
-      .thumbnail {
-        background-color: $color-accent;
-        border-color: $color-accent;
-      }
-      .film-news-item__text {
-        color: $color-accent;
-      }
-      .btn-warning {
-        background-color: $color-accent;
-      }
-    }
     &__button {
       margin-bottom: 30px;
       float: right;
       transition: background-color 0.2s;
+    }
+  }
+  &-item:hover {
+    h3 a {
+      color: $color-accent;
+    }
+    .thumbnail {
+      background-color: $color-accent;
+      border-color: $color-accent;
+    }
+    .film-news-item__text {
+      color: $color-accent;
+    }
+    .btn-warning {
+      background-color: $color-accent;
     }
   }
 }

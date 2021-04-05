@@ -4,14 +4,15 @@
   ul {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     li {
       float: none;
       font-size: 1.2rem;
       margin-right: $gap;
-      .badge {
-        font-size: 15.36px;
-        margin-left: $gap / 3;
-      }
+    }
+    li .badge {
+      font-size: 15.36px;
+      margin-left: $gap / 3;
     }
   }
   .embed-responsive {

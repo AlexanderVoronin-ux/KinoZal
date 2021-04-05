@@ -22,10 +22,16 @@ a {
 }
 
 h1 {
-  margin: (-$gap / 2) 0 ($gap * 3);
-
   font-family: $font-header;
-  font-size: 3rem;
+  @include xs-min {
+    font-size: 3rem;
+    margin: (-$gap / 2) 0 ($gap * 3);
+  }
+  @include xs {
+    font-size: 2rem;
+    margin: 0 0 ($gap * 2);
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -35,10 +41,15 @@ h1 {
   }
 }
 h2 {
-  margin: ($gap * 4) 0 ($gap * 3) ($gap * 3);
-
   font-family: $font-header;
-  font-size: 2.5rem;
+  @include xs-min {
+    font-size: 2.5rem;
+    margin: ($gap * 4) 0 ($gap * 3) ($gap * 3);
+  }
+  @include xs {
+    font-size: 1.75rem;
+    margin: ($gap * 3) 0 ($gap * 2) ($gap * 3);
+  }
   &::before {
     content: "";
     position: absolute;
@@ -58,4 +69,10 @@ h2 {
 
 h3 {
   font-family: $font-main;
+  @include xs-min {
+    font-size: 1.5rem;
+  }
+  @include xs {
+    font-size: 1.25rem;
+  }
 }
