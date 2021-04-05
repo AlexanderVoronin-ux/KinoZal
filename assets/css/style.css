@@ -176,6 +176,11 @@ h3 {
   padding-left: 7.5px;
 }
 
+.new-films-item__image,
+.top-films-item__image {
+  width: 100%;
+}
+
 .new-films-item__caption,
 .top-films-item__caption {
   text-align: center;
