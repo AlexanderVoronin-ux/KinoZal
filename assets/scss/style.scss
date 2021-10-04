@@ -1,15 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700&display=swap");
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "variables";
 @import "skin";
 
 @import "mixins-media";
 @import "mixins";
-@import "extends";
 
 @import "bootstrap-theming";
 
 @import "common";
 @import "header";
+@import "header-navbar-btn";
 @import "main";
-@import "page";
-@import "sidebar";
+@import "slider";
 @import "footer";

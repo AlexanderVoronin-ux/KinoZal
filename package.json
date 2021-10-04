@@ -15,5 +15,10 @@
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.1.0",
     "sort-css-media-queries": "^1.5.4"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "bootstrap": "^5.1.1",
+    "bootstrap-icons": "^1.5.0"
   }
 }
